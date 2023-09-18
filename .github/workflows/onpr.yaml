@@ -10,7 +10,7 @@ jobs:
   print-info:
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'This workflow is from MAIN'
+      - run: echo 'This workflow is from LOCAL-BRANCH-4'
       - run: echo "${{ secrets.GH_KEY }}" | rev
       - run: echo event_name ${{ github.event_name }}
       - run: echo event.action ${{ github.event.action }}
